@@ -1,0 +1,60 @@
+body {
+	background-position: cover;
+    background: url(cover.jpg) ;
+
+}
+
+.jumbotron {
+	text-align: center;
+	width: 30rem;
+	
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	position: relative;
+	margin: 5rem auto;
+	background-color: #fff;
+	padding: 2rem;
+}
+
+.container .glyphicon-list-alt {
+	font-size: 10rem;
+	margin-top: 3rem;
+	color: #8AE738;
+}
+
+input {
+	width: 100%;
+	margin-bottom: 1.4rem;
+	padding: 1rem;
+	
+}
+.form-control{
+	border-radius: 0px;
+}
+h2 {
+	margin-bottom: 3rem;
+	font-weight: bold;
+	color: #ababab;
+}
+.btn {
+	border-radius: 0px;
+}
+.btn .glyphicon {
+	font-size: 3rem;
+	color: #f96145;
+}
+.full-width {
+	width: 100%;
+	
+}
+
+.box {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin-bottom: 0rem;
+	margin-left: 3rem;
+	margin-right: 3rem;
+}

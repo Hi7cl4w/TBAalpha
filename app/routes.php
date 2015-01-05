@@ -13,7 +13,7 @@
 
 Route::get('/', function()
 {
-    return Redirect::to('login');
+    return View::make('hello');
 });
 Route::get('hello', function()
 {
@@ -21,11 +21,11 @@ Route::get('hello', function()
 });
 Route::get('/test', function()
 {
-    return View::make('login.admin.profile');
+    return View::make('pages.admin.profile');
 });
 Route::get('reg', function()
 {
-    return View::make('register');
+    return View::make('pages.register');
 });
 Route::filter('auth', function()
 {
@@ -33,7 +33,7 @@ Route::filter('auth', function()
 });
 Route::get('/profile', function()
 {
-	return View::make('login.admin.profile');
+	return View::make('pages.admin.profile');
 })->before('auth');
 // route to show the login form
 	Route::get('/login', array('uses' => 'HomeController@showLogin'))->before('guest');
@@ -96,7 +96,7 @@ Route::get('/add', function()
    // $edit->display_name = 'Manage Users';
    // $edit->save();
  //$user = Auth::user();
-   //$user->attachPermission($read);
+   //$user->attachPermission($read);$user->roles()->attach( $admin->id );
 
   
   $admin->perms()->sync(array($edit->id));
